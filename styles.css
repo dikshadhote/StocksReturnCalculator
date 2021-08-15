@@ -1,0 +1,19 @@
+.container
+{
+    margin:5rem;
+    
+}
+
+.inputField
+{
+    display:block;
+    margin: 1rem;
+}
+body{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+#output{
+    margin:2rem;
+}

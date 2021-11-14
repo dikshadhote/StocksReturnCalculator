@@ -24,7 +24,7 @@ function calculateProfitOrLoss(initialP,quantity,currentP)
         {
             //profit
             profitLoss=(currentP-initialP)*quantity;
-            PercentageProfitLoss=(profitLoss*100)/initialP;
+            PercentageProfitLoss=((currentP-initialP)/initialP)*100;;
             document.getElementById('output').style.color="lawngreen";
             displayMessage(`Hey! you just earned a profit of ${profitLoss} with ${PercentageProfitLoss}%`);
           
@@ -34,7 +34,7 @@ function calculateProfitOrLoss(initialP,quantity,currentP)
         {
             //loss
             profitLoss=(currentP-initialP)*quantity;
-            PercentageProfitLoss=((profitLoss*100)/initialP);
+           PercentageProfitLoss=((currentP-initialP)/initialP)*100;
             document.getElementById('output').style.color="rgb(255, 117, 26)";
             displayMessage(`Hey! you have to bear loss of ${profitLoss} with ${PercentageProfitLoss}%`);
             
